@@ -24,7 +24,7 @@ MATCH = 0
 POST = 1
 
 # Use file(1)'s choices for what's text and what's not.
-TEXTCHARS = ''.join(map(chr, [7,8,9,10,12,13,27] + range(0x20, 0x100)))
+TEXTCHARS = ''.join(map(chr, [7,8,9,10,12,13,27] + range(0x20, 0x7f) + range(0x80, 0x100)))
 ALLBYTES = ''.join(map(chr, range(256)))
 
 COLOR_TABLE = ['black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan',
